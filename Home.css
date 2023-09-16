@@ -376,28 +376,25 @@ a#logo {
 }
 #side-panel{
   width: 250px;
-  /* height: auto; */
   overflow-y:auto ;
   white-space:nowrap;
   scroll-behavior: auto;
-  /* position: relative; */
-  /* background: rebeccapurple; */
   padding: 20px 0px;
-  /* display: block; */
-  /* position: relative; */
 }
 /* .main-components::-webkit-scrollbar{
   display: none;
 } */
-#components-container{
+#components-container{  
   height: auto;
   position: relative; 
   overflow-y: auto;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  width: 100%;
   scroll-behavior: auto;
   background: #FAFAFA;
-  display: grid;
-  grid-template-columns: repeat(6,auto);
+  display: flex;
+  flex-direction: row;
+  /* white-space: nowrap; */
 }
 .device{
   display: flex;
