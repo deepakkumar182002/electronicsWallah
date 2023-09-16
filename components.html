@@ -59,6 +59,7 @@
       </ul>
     </div>
   </nav>
+  
   <div class="main-components">
     <!-- <div class="aside-panele">
     </div>
@@ -66,28 +67,28 @@
     </div> -->
     <div id="side-panel" class="boxs">
       <a href="#">
-        <li>about components</li>
+        <li>Microcontrollers</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>Sensors</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>Actuators</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>Relay moduals</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>Integrated circuit</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>net Components</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>LED's</li>
       </a>
       <a href="#">
-        <li>about components</li>
+        <li>switchs</li>
       </a>
       <a href="#">
         <li>about components</li>
@@ -136,9 +137,45 @@
       </a>
     </div>
     <div id="components-container" class="boxs">
-      <div class="device">device</div>
-      <div class="device">device</div>
-      <div class="device">device</div>
+      <script>
+        $(document).ready(function(){
+          $('.device').click(function(){
+            $('.ArduinoUNO-co').show('slow')
+            $(this).click(function(){
+            $('.ArduinoUNO-co').hide()
+          })
+          })
+        })
+      </script>
+      <div class="device">
+        <div class="img-box"><img src="./images/arduinoU.png" width="140" height="140" alt=""></div>
+        <div>ArduinoUNO</div>
+        <span style="color: orange;">&#9733; &#9733; &#9733; &#9733;</span> <span>&#9733;</span>
+        <div class="ArduinoUNO-co" >
+          <div class="img-price"><img src="./images/arduinoU.png" alt=""></div>
+          
+        </div>
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.device').click(function(){
+            $('.ArduinoUNO-co').show('slow')
+            $(this).click(function(){
+            $('.ArduinoUNO-co').hide()
+          })
+          })
+        })
+      </script>
+      <div class="device">
+        <div class="img-box"><img src="./images/arduino maga.png" width="140" height="140" alt=""></div>
+        <div>ArduinoMega</div>
+        <span style="color: orange;">&#9733; &#9733; &#9733; &#9733;</span> <span>&#9733;</span>
+        <div class="ArduinoUNO-co" >
+          <div class="img-price"><img src="./images/arduinoU.png" alt=""></div>
+          
+        </div>
+      </div>
+    <div class="device">device</div>
       <div class="device">device</div>
       <div class="device">device</div>
       <div class="device">device</div>

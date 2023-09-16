@@ -371,6 +371,7 @@ a#logo {
   top: 100px;
 }
 #side-panel a li{
+  list-style: none;
   padding: 20px 60px ;
 }
 #side-panel{
@@ -380,7 +381,7 @@ a#logo {
   white-space:nowrap;
   scroll-behavior: auto;
   /* position: relative; */
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
   padding: 20px 0px;
   /* display: block; */
   /* position: relative; */
@@ -389,24 +390,59 @@ a#logo {
   display: none;
 } */
 #components-container{
-  /* width: 800px; */
   height: auto;
-  /* position: relative;  */
+  position: relative; 
   overflow-y: auto;
   white-space: nowrap;
   scroll-behavior: auto;
-  /* left: 300px;
-  top: -600px; */
-  background: #ededed;
+  background: #FAFAFA;
   display: grid;
   grid-template-columns: repeat(6,auto);
 }
 .device{
-  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
   width: 200px;
   height: 200px;
   margin: 5px;
-  background: #a3a3a3;
-  /* border: 2px solid red; */
+  background: #ffffff;
+  overflow: auto;
+}
+.img-box{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  background-color: #e7e4e4;
+}
+/* ########### */
+.ArduinoUNO-co{
+  display: none;
+  top: 20px;
+  position: absolute;
+  width: 1000px;
+  height: 550px;
+  background-color: #f2f1f1;
+}
+.img-price{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+  background: #FAFAFA;
+}
+.ArduinoUNO-co .img-price img{
+  height: 100%;
+  width: 100%;
+}
+.device img{
+  filter: drop-shadow(10px 10px 10px #c9aaaa);
+}
+.device .img-box img:hover{
+  cursor: pointer;
+  object-fit: cover ;
+  transition: 1s;
+  scale: 1.2;
 }
 
