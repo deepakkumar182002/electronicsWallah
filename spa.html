@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Single Page Application using JavaScript</title>
+	</head>	
+	<script>
+	var pages = {
+		'home' : `<div class="cont" style="width: 1200px; height: 600px; background-color: aqua;" >
+            <img id='image' src='lion2.jpg' style=' width:500px; position:relative; top:20px; ;left:20px;' /></div>`,
+		'aboutus' : `Our About Us page<br/><br/><img src='lion2.jpg' style='width:500px;' />`,
+		'services' : `Our Services page<br/><br/><img src='lion3.jpg' style='width:500px;' />`,
+		'contact' : `Our Contact Us page<br/><br/><img src='lion4.jpg' style='width:500px;' />`
+	};
+
+	function getPageContent(page){
+		var contentToReturn;
+		switch(page){
+			case 'home':
+				contentToReturn = pages.home;
+				break;
+			case 'aboutus':
+				contentToReturn = pages.aboutus;
+				break;
+			case 'services':
+				contentToReturn = pages.services;
+				break;
+			case 'contact':
+				contentToReturn = pages.contact;
+				break;
+			default:
+				contentToReturn = pages.home;
+				break;				
+		}
+		document.getElementById('content').innerHTML = contentToReturn; 
+	}
+	</script>
+<body onload="getPageContent('home')">
+
+	<div style="width:10%; float: left;background: #c08f8f;height: 100%;">
+		<ul>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('home')">
+					Home
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('aboutus')">
+					About Us
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('services')">
+					Services
+				</a>
+			</li>
+			<li style="line-height: 50px;">
+				<a href="#" onclick="getPageContent('contact')">
+					Contact
+				</a>
+			</li>
+		</ul>
+	</div>
+<div  id="content" style="width: 90%;float: right; background: #561a1a;color:#fff; height: 100%;font-size: 50px;"><p style="margin-left: 50px;"><p></div>
+</body>
+
+</html>
