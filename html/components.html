@@ -7,8 +7,9 @@
   <title>electronicsWallah</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="/Home.css" />
-  <link rel="stylesheet" href="/responsive.css">
+  <link rel="stylesheet" href="../css/Home.css" />
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/zoom.css">
   <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> <!--load all styles -->
   <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
   <link href="/your-path-to-uicons/css/uicons-rounded-bold.css" rel="stylesheet">
@@ -137,17 +138,19 @@
       </a>
     </div>
     <div id="components-container" class="boxs">
+      <!-- ############## for ArduinoUNO-co new screen ################ -->
       <script>
         $(document).ready(function(){
           $('.device').click(function(){
             $('.ArduinoUNO-co').show('slow')
             $(".fa-regular").click(function(){
-            $('.ArduinoUNO-co').hide()
-          })
+              $('.ArduinoUNO-co').hide()
+            })
           })
         })
-      </script>
+        </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js"></script>
+      <!-- ############## ArduinoUNO-co new screen ################ -->
       <div class="ArduinoUNO-co">
         <div class="typesofboard">
           <a href="./images/arduinoU.png">
@@ -281,6 +284,10 @@
     
   </div>
 </body>
+<!-- ################## Jquery zoomer CDN ################# -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="zoom.js"></script>
+<!-- ################## Jquery zoomer CDN ################# -->
 <script src="./main.js"></script>
 </body>
 </html>
