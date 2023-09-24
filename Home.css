@@ -422,7 +422,7 @@ a#logo {
   width: 1270px;
   height: 600px;
   background-color: #f2f1f1;
-  z-index: 5;
+  z-index: 100;
 }
 .typesofboard{
   margin: 20px;
@@ -433,7 +433,7 @@ a#logo {
   display: flex;
   flex-direction: column;
 }
-.typesofboard .typB{
+.typesofboard a{
   width: 100%;
   border: 1px solid #c8c8c8;
 }
