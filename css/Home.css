@@ -6,12 +6,14 @@
   font-family: 'adobe-clean', 'Adobe Clean', 'Trebuchet MS', sans-serif;
   color: #4e4e4e;
 }
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   /* color: #0af82e; */
 }
+
 /* .container {
   width: 100%;
   display: flex;
@@ -30,18 +32,21 @@ body {
   box-shadow: 0 0 20px 10px #c6c5c5bd;
   /* box-shadow: 0 0 20px 10px #d7d7f4; */
 }
+
 .nav-services {
   display: flex;
   position: relative;
 }
+
 .nav-services li {
   list-style: none;
   position: relative;
   font-size: 1.4rem;
   font-weight: 100;
   margin-left: 40px;
-  
+
 }
+
 .nav-services li::after {
   content: "";
   position: absolute;
@@ -56,24 +61,27 @@ body {
   transform-origin: right;
   transition: transform 0.5s;
 }
+
 .nav-services li:hover:after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-/* color: #050543; previous color */  
+/* color: #050543; previous color */
 a {
   text-decoration: none;
   /* color: #242424; */
 }
+
 a#logo {
-  display:flex;
+  display: flex;
   position: relative;
   left: 20px;
   width: 160px;
   height: 70px;
   overflow: hidden;
 }
+
 /* logo animation */
 /* #logo::after {
   content: "";
@@ -104,6 +112,7 @@ a#logo {
   align-items: center;
   justify-content: center;
 }
+
 .search-bar input {
   width: 300px;
   height: 50px;
@@ -116,6 +125,7 @@ a#logo {
   outline: #d1d0d0;
   position: relative;
 }
+
 .search-bar button {
   height: 50px;
   width: 50px;
@@ -123,11 +133,13 @@ a#logo {
   background: #e4e3e3;
   border: 1px solid #d1d0d0;
 }
-.search-bar button:hover{
+
+.search-bar button:hover {
   background: #d9d8d8;
   cursor: pointer;
   transition: 0.5s;
 }
+
 .log-sig button {
   width: 100px;
   height: 40px;
@@ -137,20 +149,24 @@ a#logo {
   margin-right: 20px;
   /* color:#050543; */
   font-size: 1.1em;
-  
+
 }
-.log-sig button:hover{
+
+.log-sig button:hover {
   background: #d9d8d8;
   cursor: pointer;
   transition: 0.5s;
 }
-.side-b{
- display: none;       
-}
-/* sidebar-container */
-.sidebar-container{
+
+.side-b {
   display: none;
 }
+
+/* sidebar-container */
+.sidebar-container {
+  display: none;
+}
+
 /* center content part */
 .first-container {
   position: relative;
@@ -160,6 +176,7 @@ a#logo {
   display: flex;
   align-items: center;
 }
+
 .template-container {
   position: absolute;
   top: 105px;
@@ -176,12 +193,13 @@ a#logo {
   display: inline-block;
   height: 350px;
   width: 100%;
-  margin:  5px 0px;
+  margin: 5px 0px;
   transition: all;
   scroll-behavior: smooth;
-  animation: scroll 20s ease-in-out infinite ;
+  animation: scroll 20s ease-in-out infinite;
   border: none;
 }
+
 /* .box img{
   height: 100%;
   width: 100%;
@@ -190,22 +208,25 @@ a#logo {
 ::-webkit-scrollbar {
   display: none;
 }
+
 @keyframes scroll {
   20% {
     transform: translateX(-200%);
   }
 
 }
-.devices-box-icons span{
+
+.devices-box-icons span {
   display: flex;
   /* color: black; */
   font-size: 1.8em;
   width: 100%;
   top: -30px;
-  left:20px;
+  left: 20px;
   position: relative;
 }
-.devices-box-icons{
+
+.devices-box-icons {
   display: inline-block;
   width: 100%;
   height: 150px;
@@ -214,7 +235,8 @@ a#logo {
   /* left: 20px; */
   position: relative;
 }
-.icon-cont{ 
+
+.icon-cont {
   position: absolute;
   display: flex;
   width: 100%;
@@ -224,15 +246,16 @@ a#logo {
   white-space: nowrap;
   scroll-behavior: auto;
 }
+
 .devices-box-icons .fa-solid {
-    font-size: 5.5em;
-    margin-left: 50px;
-    /* color: black; */
-    display: inline-block;
+  font-size: 5.5em;
+  margin-left: 50px;
+  /* color: black; */
+  display: inline-block;
 }
 
 /* device-box-components */
-.device-box-components{
+.device-box-components {
   width: 100%;
   height: 300px;
   position: absolute;
@@ -244,29 +267,33 @@ a#logo {
   scroll-behavior: auto;
   /* overflow-y: hidden; */
 }
-.sensors{
+
+.sensors {
   position: absolute;
   top: 10px;
   left: 20px;
   font-size: 30px;
   font-weight: 500;
 }
+
 .device-box-components a {
   display: inline-block;
   /* border: 1px solid rgb(196, 196, 196); */
   margin: 45px 0px;
   /* color: black; */
   text-align: center;
-  
+
 }
+
 @keyframes scroll2 {
   20% {
     transform: translateX(-100px);
   }
-  
+
 }
-.device-box-components a li{
-  animation: scroll2 10s ease-in-out infinite ;
+
+.device-box-components a li {
+  animation: scroll2 10s ease-in-out infinite;
   list-style: none;
   height: 200px;
   width: 200px;
@@ -276,13 +303,15 @@ a#logo {
   margin: 10px 10px;
   background-color: #e6e6e6;
 }
-.device-box-components a li:hover{
+
+.device-box-components a li:hover {
   box-shadow: 0 0 20px 10px #cacaca;
   /* height: 220px;
   width: 220px; */
   transition: 1s;
 }
-.device-box-components a li img:hover{
+
+.device-box-components a li img:hover {
   scale: 150%;
   transition: 1s;
 }
@@ -294,15 +323,16 @@ a#logo {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* background-color: rgb(239, 241, 241); */
+  /* background-color: rgb(131, 209, 209); */
   overflow-y: hidden;
 }
+
 .site-footer {
   width: 100%;
   background: #FAFAFA;
   height: 300px;
-  position: relative;
-  top: 400px;
+  position: absolute;
+  bottom: 0px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -310,6 +340,7 @@ a#logo {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /* Reset default margin and padding */
 
 .footer-logo img {
@@ -317,12 +348,15 @@ a#logo {
   top: 20px;
   left: 20px;
 }
-.footer-links{
+
+.footer-links {
   display: flex;
 }
-.fo-headings span{
+
+.fo-headings span {
   font-weight: 1000;
 }
+
 .footer-links li {
   /* display: flex; */
   list-style: none;
@@ -330,7 +364,7 @@ a#logo {
   /* background-color: #bfbfec; */
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
   opacity: 50%;
   transition: 1s;
 }
@@ -347,9 +381,10 @@ a#logo {
 
 .footer-social a {
   font-weight: 500;
-  padding: 0px 10px ;
+  padding: 0px 10px;
 }
-.footer-social .fa-brands{
+
+.footer-social .fa-brands {
   padding: 0px 5px;
 }
 
@@ -361,7 +396,7 @@ a#logo {
 }
 
 /* ################### Components CSS ############################ */
-.main-components{
+.main-components {
   width: 100%;
   height: 100vh;
   /* background: #d1d0d0; */
@@ -370,23 +405,26 @@ a#logo {
   position: relative;
   top: 100px;
 }
-#side-panel a li{
+
+#side-panel a li {
   list-style: none;
-  padding: 20px 60px ;
+  padding: 20px 60px;
 }
-#side-panel{
+
+#side-panel {
   width: 250px;
-  overflow-y:auto ;
-  white-space:nowrap;
+  overflow-y: auto;
+  white-space: nowrap;
   scroll-behavior: auto;
   padding: 20px 0px;
 }
+
 /* .main-components::-webkit-scrollbar{
   display: none;
 } */
-#components-container{  
+#components-container {
   height: auto;
-  position: relative; 
+  position: relative;
   overflow-y: auto;
   flex-wrap: wrap;
   scroll-behavior: auto;
@@ -396,8 +434,10 @@ a#logo {
   flex-direction: row;
   /* white-space: nowrap; */
 }
-.device{
+
+.device {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 200px;
   height: 200px;
@@ -405,17 +445,19 @@ a#logo {
   background: #ffffff;
   overflow: auto;
 }
-.img-box{
+
+.img-box {
   display: flex;
   justify-content: center;
   width: 200px;
   height: 150px;
   background-color: #e7e4e4;
 }
+
 /* ###########################*/
-.ArduinoUNO-co{
+.ArduinoUNO-co {
   display: none;
-  position: relative; 
+  position: absolute;
   overflow-y: auto;
   flex-wrap: wrap;
   scroll-behavior: auto;
@@ -424,7 +466,8 @@ a#logo {
   background-color: #f2f1f1;
   z-index: 100;
 }
-.typesofboard{
+
+.typesofboard {
   margin: 20px;
   align-items: center;
   justify-content: center;
@@ -433,11 +476,13 @@ a#logo {
   display: flex;
   flex-direction: column;
 }
-.typesofboard a{
+
+.typesofboard a {
   width: 100%;
   border: 1px solid #c8c8c8;
 }
-.img-price{
+
+.img-price {
   position: absolute;
   top: 20px;
   left: 120px;
@@ -446,32 +491,172 @@ a#logo {
   background: #FAFAFA;
   border: 1px solid #c8c8c8;
 }
-.ArduinoUNO-co .img-price img{
+
+.ArduinoUNO-co .img-price img {
   height: 100%;
   width: 100%;
 }
-.deviceinspection{
+
+.deviceinspection {
   width: auto;
   height: 600px;
   overflow: auto;
+  overflow-x: hidden;
   scroll-behavior: auto;
   white-space: wrap;
-  /* background-color: #c9aaaa; */
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 0px;
-  left: 450px;
+  left: 380px;
 }
+
 /* ###################################### */
-.device img{
+.device img {
   filter: drop-shadow(10px 10px 10px #c9aaaa);
 }
-.device .img-box img:hover{
+
+.device .img-box img:hover {
   cursor: pointer;
-  object-fit: cover ;
+  object-fit: cover;
   transition: 1s;
   scale: 1.2;
 }
+/* .some_item_detail{
+  height: auto;
+  position: relative;
+  background-color: orange;
+} */
+.some-item1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.some-item1 li {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-weight: 200;
+  list-style: none;
+  padding: 8px 10px;
+}
+.some-item2{
+  display: flex;
+  flex-direction: column;
+  left: 200px;
+  top: -170px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.some-item2 li {
+  white-space: wrap;
+  font-weight: 200;
+  list-style: none;
+  padding: 8px 10px;
+}
+.about-items-details{
+  position: relative;
+  top: -150px;
+}
+.about-content{
+  margin-top:10px; 
+}
+.about-content li{
+  padding: 5px 0px;
+}
 
 
+/* ################################ zoomer css */
+/* html{
+	background-color: aliceblue;
+}
+body{
+	margin:0 auto;
+}
+h1{
+	margin-top:150px;
+	margin-left:500px;
+	font-family:"Glass Antique", cursive;
+} */
+.piclist {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.piclist li {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  /* margin: 1px; */
+  border: 1px solid #cbcbcb;
+}
+
+.piclist li img {
+  width: 100%;
+  height: 100%;
+}
+
+.picZoomer img {
+  width: 100%;
+  height: 100%;
+}
+
+.picZoomer {
+  width: 350px;
+  height: 350px;
+  /* background-color: #4e4e4e; */
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.picZoomer-pic-wp,
+.picZoomer-zoom-wp {
+  border: 1px solid #cbcbcb;
+}
+
+.picZoomer-pic-wp {
+  position: relative;
+  overflow: hidden;
+}
+
+.picZoomer-pic-wp:hover .picZoomer-cursor {
+  display: block;
+}
+
+.picZoomer-zoom-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.picZoomer-pic {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  display: block;
+}
+
+.picZoomer-zoom-wp {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.picZoomer-cursor {
+  display: none;
+  cursor: crosshair;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  background-color: rgba(0, 0, 0, 0.333);
+}
+
+/* ################################ zoomer css */

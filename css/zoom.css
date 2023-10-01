@@ -4,6 +4,9 @@
 }
 
 .zoom {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   display: inline-block;
 }
 
@@ -52,5 +55,6 @@
 
 .magnifier,
 .viewer {
+  z-index: 2000;
   display: none;
 }
