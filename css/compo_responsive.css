@@ -1,0 +1,52 @@
+@media (min-width:100px) and (max-width:460px){
+    .main-components {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        position: relative;
+        top: 100px;
+      }
+      #side-panel a li {
+        list-style: none;
+        font-size: 10px;
+        padding: 10px 20px;
+      }
+      
+      #side-panel {
+        width: 120px;
+        /* background-color: aquamarine; */
+        overflow-y: auto;
+        white-space: nowrap;
+        scroll-behavior: auto;
+        padding: 20px 0px;
+      }  
+      .device {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        background: #ffffff;
+        overflow: auto;
+      }
+      
+      .img-box img {
+        width: 40px;
+        height: 40px;
+      }
+      .arduino-text{
+        display: flex;
+        font-size: 10px;
+    }
+    .arduino-off{
+        display: flex;
+        font-size: 8px;
+      }
+      .img-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        background-color: #e7e4e4;
+      }
+      
+}

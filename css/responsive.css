@@ -220,7 +220,7 @@
     
   }
 }
-@media (min-width:100px) and (max-width:360px) {
+@media (min-width:100px) and (max-width:460px) {
   .template-container {
     position: absolute;
     top: 105px;
@@ -263,14 +263,11 @@
   }
 
   .icon-cont {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
     top: 10px;
     left: -30px;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: auto;
   }
 
   .devices-box-icons .fa-solid {
@@ -300,7 +297,7 @@
   .sensors {
     position: relative;
     top: -60px;
-    left: -290px;
+    left: -385px;
     font-size: 1rem;
     font-weight: 1000;
   }
@@ -341,7 +338,9 @@
   .footer-links {
     position: absolute;
     width: 250px;
-    left: 5px;
+    top: 70px;
+    left: 20px;
+
   }
 
   .footer-links .about li {

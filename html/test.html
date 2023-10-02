@@ -3,23 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>E-commerce Image Zoomer</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2); /* Adjust the scale factor for the desired zoom level */
+}
+
+    </style>
 </head>
 <body>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
+    <script>
+        // JavaScript is not necessary for basic image zooming, but you can use it for more advanced features.
+
+// For example, you can add a click event to the image to open a modal with a larger version of the image.
+// Here's a simple example of how to do that:
+
+const zoomImage = document.getElementById('zoom-image');
+
+zoomImage.addEventListener('click', function () {
+    // Create a modal element
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    
+    // Create an image element for the modal
+    const modalImage = document.createElement('img');
+    modalImage.src = zoomImage.src;
+    modalImage.alt = zoomImage.alt;
+    
+    // Add the image to the modal
+    modal.appendChild(modalImage);
+    
+    // Add the modal to the body
+    document.body.appendChild(modal);
+    
+    // Close the modal when clicking outside of it
+    modal.addEventListener('click', function () {
+        document.body.removeChild(modal);
+    });
+});
+
+    </script>
+    <div class="product">
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2023/09/19/12/34/dog-8262506_640.jpg" alt="Product Image" id="zoom-image">
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
