@@ -250,11 +250,17 @@ a#logo {
 .devices-box-icons .fa-solid {
   font-size: 5.5em;
   margin-left: 50px;
-  /* color: black; */
   display: inline-block;
 }
 
 /* device-box-components */
+.sensors {
+  position: absolute;
+  top: 700px;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
 .device-box-components {
   width: 100%;
   height: 300px;
@@ -265,33 +271,21 @@ a#logo {
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: auto;
+  /* background-color: #c9aaaa; */
   /* overflow-y: hidden; */
 }
-
-.sensors {
-  position: absolute;
-  top: 700px;
-  left: 20px;
-  font-size: 30px;
-  font-weight: 500;
-}
-
 .device-box-components a {
   display: inline-block;
-  /* border: 1px solid rgb(196, 196, 196); */
   margin: 45px 0px;
-  /* color: black; */
   text-align: center;
-
+  
 }
 
 @keyframes scroll2 {
   20% {
     transform: translateX(-100px);
   }
-
 }
-
 .device-box-components a li {
   animation: scroll2 10s ease-in-out infinite;
   list-style: none;
@@ -306,13 +300,56 @@ a#logo {
 
 .device-box-components a li:hover {
   box-shadow: 0 0 20px 10px #cacaca;
-  /* height: 220px;
-  width: 220px; */
+  transition: 1s;
+}
+.device-box-components a li img:hover {
+  scale: 130%;
   transition: 1s;
 }
 
-.device-box-components a li img:hover {
-  scale: 150%;
+/* device box controllers */
+.device-box-controllers {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  flex-direction: row;
+  top: 1000px;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: auto;
+  /* background-color: #c9aaaa; */
+  /* overflow-y: hidden; */
+}
+.device-box-controllers a {
+  display: inline-block;
+  margin: 45px 0px;
+  text-align: center;
+}
+.device-box-controllers a li {
+  /* background-color: #c9aaaa; */
+  animation: scroll1 10s ease-in-out reverse infinite;
+  list-style: none;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+  background-color: #e6e6e6;
+}
+@keyframes scroll1 {
+  20% {
+    transform: translateX(-100px);
+  }
+
+}
+.device-box-controllers a li:hover {
+  box-shadow: 0 0 20px 10px #cacaca;
+  transition: 1s;
+}
+.device-box-controllers a li img:hover {
+  scale: 130%;
   transition: 1s;
 }
 
@@ -323,7 +360,6 @@ a#logo {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* background-color: rgb(131, 209, 209); */
   overflow-y: hidden;
 }
 
