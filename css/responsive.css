@@ -295,9 +295,9 @@
     height: 50%;
   }
   .sensors {
-    position: relative;
-    top: -60px;
-    left: -385px;
+    position: absolute;
+    top: 425px;
+    left: 20px;
     font-size: 1rem;
     font-weight: 1000;
   }

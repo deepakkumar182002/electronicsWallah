@@ -8,13 +8,14 @@
         top: 100px;
       }
       #side-panel a li {
-        list-style: none;
+        /* display: none; */
         font-size: 10px;
         padding: 10px 20px;
       }
       
       #side-panel {
-        width: 120px;
+        width: 250px;
+        /* display: none; */
         /* background-color: aquamarine; */
         overflow-y: auto;
         white-space: nowrap;
@@ -27,6 +28,11 @@
         height: 80px;
         background: #ffffff;
         overflow: auto;
+      }
+      #components-container{
+        /* background-color: antiquewhite; */
+        position: absolute;
+        left: 20px;
       }
       
       .img-box img {
