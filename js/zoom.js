@@ -15,7 +15,7 @@
 
 		opts.zoomWidth = opts.zoomWidth||opts.picWidth;
 		opts.zoomHeight = opts.zoomHeight||opts.picHeight;
-		var zoomWPSizeHalf = {w:opts.zoomWidth/2, h:opts.zoomHeight/2};
+		var zoomWPSizeHalf = {w:opts.zoomWidth/0.4, h:opts.zoomHeight/0.7};
 
 
 		$zoomWP.css({'width': opts.zoomWidth+'px', 'height':opts.zoomHeight+'px'});

@@ -455,7 +455,7 @@ a#logo {
 } */
 
 .ArduinoUNO-co {
-  display: none;
+  display:none;
   top: 0px;
   position: relative;
   overflow-y: auto;
@@ -469,7 +469,7 @@ a#logo {
   z-index: 100;
 }
 
-.typesofboard {
+/* .typesofboard {
   margin: 20px;
   align-items: center;
   justify-content: center;
@@ -495,7 +495,7 @@ a#logo {
 .ArduinoUNO-co .img-price img {
   height: 100%;
   width: 100%;
-}
+} */
 
 .deviceinspection {
   width: auto;
@@ -596,7 +596,6 @@ a#logo {
 .picZoomer {
   width: 350px;
   height: 350px;
-  /* background-color: #4e4e4e; */
   position: relative;
   left: 20px;
   top: 20px;
@@ -608,18 +607,22 @@ a#logo {
 }
 
 .picZoomer-pic-wp {
-  position: absolute;
+  display: flex;
+  position: relative;
   overflow: hidden;
+  left: 0px;
+  top: 0px;
 }
 
 .picZoomer-pic-wp:hover .picZoomer-cursor {
-  display:flex;
+  display:block;
   right: 0px;
   top: 0px;
-  position: absolute;
-  /* background-color: #c9aaaa; */
+  cursor: crosshair;
+  /* padding: 20px 20px; */
+  margin: -120px -280px ;
+  position: relative;
 }
-
 .picZoomer-zoom-pic {
   position: absolute;
   top: 0;
