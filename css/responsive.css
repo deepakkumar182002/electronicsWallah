@@ -277,12 +277,19 @@
   }
 
   /* device-box-components */
+  .device-box-main-components{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    top: 430px;
+  }
   .device-box-components {
     width: 100%;
     height: 150px;
-    position: absolute;
+    position: relative;
     flex-direction: row;
-    top: 400px;
+    top: -10px;
     display: flex;
     overflow-y: hidden;
     overflow-x: auto;
@@ -294,9 +301,9 @@
     width: 50%;
     height: 50%;
   }
-  .sensors {
+  .device-box-main-components span{
     position: absolute;
-    top: 425px;
+    top: 5px;
     left: 20px;
     font-size: 1rem;
     font-weight: 1000;
@@ -316,6 +323,59 @@
     justify-content: center;
     margin: 10px 10px;
     background-color: #e6e6e6;
+  }
+  /* drone frame container */
+  .drone-frmas-main-container{
+    z-index: 100;
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    /* display: inline-block; */
+    top:580px;
+  }
+  .drone-frmas-main-container span{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-size: 1rem;
+    font-weight: 1000;
+  }
+  .drone-frmas-container{
+    /* background-color: #c9aaaa; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: auto;
+    top: -10px;
+    /* top: 1100px; */
+    cursor: pointer;
+    
+  }
+  .drone-frmas-container a{
+    margin: 16px 0px;
+  
+  }
+  .drone-frmas-container a img{
+    height: 25%;
+    width: 25%;
+  }
+  .drone-frmas-container a li{
+    animation: scroll2 10s ease-in-out infinite reverse;
+    background-color: #e6e6e6;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px ;
+  }
+  .drone-frmas-container a li:hover{
+    box-shadow: 0 0 20px 10px #cacaca;
+    transition: 1s;
   }
 
   .site-footer {
